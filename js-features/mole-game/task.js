@@ -14,11 +14,11 @@ for (let i = 1; i <= 9; i++) {
             countLost.textContent = parseInt(countLost.textContent) + 1;
         };
 
-        if (parseInt(countDead.textContent) == 7) {
+        if (parseInt(countDead.textContent) === 7) {
             alert('Победа !');
             countDead.textContent = 0;
             countLost.textContent = 0;
-        } else if (parseInt(countLost.textContent) == 5) {
+        } else if (parseInt(countLost.textContent) === 5) {
             alert('Вы проиграли !');
             countDead.textContent = 0;
             countLost.textContent = 0;
